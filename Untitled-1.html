@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="My First JavaScript Function";
+}
+</script>
+</head>
+<script type="text/javascript">
+document.write("Hello World!")
+document.write("Hello World!")
+document.write("Hello World!")
+document.write("Hello World!")
+document.write("Hello World!")
+document.write("<h1>Hello World!</h1>")
+function message()
+{
+//alert("该提示框是通过 onload 事件调用的。")
+}
+
+</script>
+
+<body onload="message()">
+
+<script type="text/javascript">
+document.write("该消息在页面加载时输出。")
+</script>
+
+
+<script src="/js/example_externaljs.js">
+</script>
+
+<p>
+实际的脚本位于名为 "xxx.js" 的外部脚本中。
+</p>
+<h1>My Web Page</h1>
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<h1>My Web Page</h1>
+
+<p id="demo2">A Paragraph</p>
+
+<button type="button" onclick="myFunction2()">Try it2</button>
+
+<script>
+function myFunction2()
+{
+document.getElementById("demo2").innerHTML="Hello World!!!";
+}
+</script>
+
+<script>
+function calcsum()
+{
+	var x=2;
+	var y=3;
+	var z=x+y;
+	
+	var pi=3.14;
+	var name="Bill Gates";
+	var answer='Yes I am!';
+	
+	var carname="Volvo";
+	
+	var name="Gates",
+	age=56,
+	job="CEO";
+	
+	
+}
+</script>
+<p id="demo3"></p>
+<button type="button" onclick="showpara()">showpara</button>
+
+<script>
+function showpara()
+{
+var carname="Volvo, is a good boy !!";
+document.getElementById("demo3").innerHTML=carname;
+}
+</script>
+
+
+
+
+
+<p>假设 y=5，计算 x=y+2，并显示结果。</p>
+<button onclick="myFunction4()">点击这里</button>
+
+<p id="demo4"></p>
+
+<script>
+function myFunction4()
+{
+var answer="Nice to meet you!";
+var answer="He is called 'Bill'";
+var answer='He is called "Bill"';
+var y2=123e5;      // 12300000
+var z2=123e-5;     // 0.00123
+//document.write(x1 + "<br />")
+//document.write(x2 + "<br />")
+document.write(y2 + "<br />")
+document.write(z2 + "<br />")
+
+var y=5;
+var x=y+2;
+var demoP=document.getElementById("demo4")
+demoP.innerHTML="x=" + x + answer;
+
+
+}
+</script>
+
+<script>
+
+var cars=new Array();
+cars[0]="Audi";
+cars[1]="BMW";
+cars[2]="Volvo";
+
+//var cars=new Array("Audi","BMW","Volvo");
+var i;
+var cars = new Array();
+cars[0] = "Audi";
+cars[1] = "BMW";
+cars[2] = "Volvo";
+
+for (i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+
+
+</script>
+
+
+<script> 
+var person={firstname:"Bill", lastname:"Gates", id:5566};
+var person={
+firstname : "Bill",
+lastname  : "Gates",
+id        :  5566
+};
+
+name=person.lastname;
+name=person["lastname"];
+
+document.write(person.lastname + "<br/>");
+document.write(person["lastname"] + "<br/>");
+
+</script>
+
+<script>
+cars=null;
+person=null;
+var carname=new String;
+var x=      new Number;
+var y=      new Boolean;
+var cars=   new Array;
+var person= new Object;
+
+var txt = "Hello";
+</script>
+
+<script>
+person=new Object();
+person.firstname="Bill";
+person.lastname="Gates";
+person.age=56;
+person.eyecolor="blue";
+document.write("Person info list:<br/>");
+document.write(person.age + "<br/>");
+document.write(person.firstname + "<br/>");
+document.write(person.lastname + "<br/>");
+document.write(person.eyecolor + "<br/>");
+
+</script>
+
+<script>
+var message="Hello World!";
+var x=message.length;
+var y=message.toUpperCase();
+document.write(x + "<br/>");
+document.write(y + "<br/>");
+</script>
+
+
+<script>
+var age =20;
+if (age<18) 
+	document.write("Too young" + "<br/>");
+else
+	document.write("older" + "<br/>")
+
+var visitor = "PRES";	
+var greeting=(visitor=="PRES")?"Dear President ":"Dear ";
+document.write(greeting + "<br/>")	
+	
+</script>
+
+<script>
+var time = 10;
+var x;
+if (time<10)
+{
+x="Good morning";
+}
+else if (time<20)
+{
+x="Good day";
+}
+else
+{
+x="Good evening";
+}
+document.write(x + "<br/>");  
+
+</script>
+
+
+<script>
+var day=new Date().getDay();
+switch (day)
+{
+case 0:
+  x="Today it's Sunday";
+  break;
+case 1:
+  x="Today it's Monday";
+  break;
+case 2:
+  x="Today it's Tuesday";
+  break;
+case 3:
+  x="Today it's Wednesday";
+  break;
+case 4:
+  x="Today it's Thursday";
+  break;
+case 5:
+  x="Today it's Friday";
+  break;
+case 6:
+  x="Today it's Saturday";
+  break;
+}
+document.write(x + "<br/>");
+</script>
+
+
+<script>
+var day=new Date().getDay();
+switch (day)
+{
+case 6:
+  x="Today it's Saturday";
+  break;
+case 0:
+  x="Today it's Sunday";
+  break;
+default:
+  x="Looking forward to the Weekend";
+}
+
+document.write(x + "<br/>");
+
+</script>
+
+
+<script>
+var cars= new Array();  cars[0]=1; cars[1]='I am here.'; cars[2]=3;
+for (var i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+</script>
+
+<script>
+var x;
+for (var i=0; i<5; i++)
+{
+x=x + "The number is " + i + "<br>";
+}
+document.write(x + "<br>");
+</script>
+  
+
+<script>
+var person={fname:"John",lname:"Doe",age:25};
+var txt = "";
+for (x in person)
+{
+txt=txt + person[x] + "<br>";
+}
+document.write(txt + "<br>");
+</script>
+
+<script>
+cars=["BMW","Volvo","Saab","Ford"];
+var i=0;
+for (;cars[i];)
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+
+</script>
+  
+  
+  
+<script>
+cars=["BMW","Volvo","Saab","Ford"];
+var i=0;
+while (cars[i])
+{
+document.write(cars[i] + "<br>");
+i++;
+}
+
+</script>  
+
+
+
+<script>
+var x="",i=0;
+for (i=0;i<10;i++)
+{
+if (i==3)
+{
+break;
+}
+x=x + "The number is " + i + "<br>";
+}
+
+document.write(x,i + "<br>")
+
+</script>
+
+<script>
+var x="",i=0;
+for (i=0;i<=10;i++)
+{
+if (i==3) continue;
+x=x + "The number is " + i + "<br>";
+}
+document.write(x,i + "<br>")
+</script>
+
+  
+<script>
+var cars=["BMW","Volvo","Saab","Ford"];
+list:
+{
+document.write(cars[0] + "<br>");
+document.write(cars[1] + "<br>");
+document.write(cars[2] + "<br>");
+break list;
+document.write(cars[3] + "<br>");
+document.write(cars[4] + "<br>");
+document.write(cars[5] + "<br>");
+}
+</script>  
+
+//<script>
+//var txt="";
+//function message()
+//{
+//try
+//  {
+//  adddlert("Welcome guest!");
+//  }
+//catch(err)
+//  {
+//  txt="There was an error on this page.\n\n";
+//  txt+="Error description: " + err.message + "\n\n";
+//  txt+="Click OK to continue.\n\n";
+//  alert(txt);
+//  }
+//}
+//</script>
+
+<script>
+function myFunction()
+{
+try
+  {
+  var x=document.getElementById("demo5").value;
+  if(x=="")    throw "empty";
+  if(isNaN(x)) throw "not a number";
+  if(x>10)     throw "too high";
+  if(x<5)      throw "too low";
+  if(x >=5 && x <= 10)
+  	var y=document.getElementById("mess");
+	y.innerHTML="Good!";
+  }
+catch(err)
+  {
+  var y=document.getElementById("mess");
+  y.innerHTML="Error: " + err + ".";
+  }
+}
+</script>
+
+<h1>My First JavaScript</h1>
+<p>Please input a number between 5 and 10:</p>
+<input id="demo5" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="mess"></p>
+
+
+<script type="text/javascript">
+
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+  else if(value.length >30)
+	{alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Not a valid e-mail address!")==false)
+  {email.focus();return false}
+}
+}
+</script>
+
+<form action="submitpage.htm" onsubmit="return validate_form(this)" method="post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit"> 
+</form>
+
+
+<script>
+document.write(Date());
+</script>
+
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML="New text!";
+</script>
+
+
+<h1 id="header">Old Header</h1>
+
+<script>
+var element=document.getElementById("header");
+element.innerHTML="New Header";
+</script>
+
+
+<img id="image" src="smiley.gif">
+
+<script>
+document.getElementById("image").src="landscape.jpg";
+</script>
+
+
+
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color="blue";
+</script>
+
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button" onclick="document.getElementById('id1').style.color='red'">
+点击这里
+</button>
+
+<h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
+
+
+<script>
+function changetext(id)
+{
+id.innerHTML="谢谢!";
+}
+</script>
+</head>
+<body>
+<h1 onclick="changetext(this)">请点击该文本</h1>
+
+<button onclick="displayDate()">点击这里获取日期</button>
+
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:green;width:120px;height:20px;padding:40px;color:#ffffff;">把鼠标移到上面</div>
+
+<script>
+function mOver(obj)
+{
+obj.innerHTML="谢谢"
+}
+
+function mOut(obj)
+{
+obj.innerHTML="把鼠标移到上面"
+}
+</script>
+
+
+<script>
+function myFunction()
+{
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+</script>
+
+请输入英文字符：<input type="text" id="fname" onchange="myFunction()">
+<p>当您离开输入字段时，会触发将输入文本转换为大写的函数。</p>
+
+
+
+//<body onload="checkCookies()">
+//
+//<script>
+//function checkCookies()
+//{
+//if (navigator.cookieEnabled==true)
+//	{
+//	alert("已启用 cookie")
+//	}
+//else
+//	{
+//	alert("未启用 cookie")
+//	}
+//}
+//</script>
+//
+//<p>提示框会告诉你，浏览器是否已启用 cookie。</p>
+//
+
+
+<p>点击按钮就可以执行 <em>displayDate()</em> 函数。</p>
+
+<button id="myBtn">点击这里</button>
+
+<script>
+document.getElementById("myBtn").onclick=function(){displayDate()};
+function displayDate()
+{
+document.getElementById("demo6").innerHTML=Date();
+}
+</script>
+
+<p id="demo6"></p>
+
+
+
+
+
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:green;color:#ffffff;width:90px;height:20px;padding:40px;font-size:12px;">请点击这里</div>
+
+<script>
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="请释放鼠标按钮"
+}
+
+function mUp(obj)
+{
+obj.style.backgroundColor="green";
+obj.innerHTML="请按下鼠标按钮"
+}
+</script>
+
+
+
+<script>
+function myFunction(x)
+{
+x.style.background="yellow";
+}
+function myfocusout(x)
+{
+x.style.background="red";
+}
+</script>
+
+请输入英文字符：<input type="text" onfocus="myFunction(this)" onfocusout="myfocusout(this)">
+
+<p>当输入字段获得焦点时，会触发改变背景颜色的函数。</p>
+
+<h1 onmouseover="style.color='red'" onmouseout="style.color='blue'">
+请把鼠标移到这段文本上
+</h1>
+
+
+
+<div id="div1">
+<p id="p1">这是一个段落</p>
+<p id="p2">这是另一个段落</p>
+</div>
+
+<script>
+var para=document.createElement("p");
+var node=document.createTextNode("这是新段落。");
+para.appendChild(node);
+
+var element=document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+
+<div id="div2">
+<p id="p1">这是一个段落。</p>
+<p id="p2">这是另一个段落。</p>
+</div>
+
+<script>
+var parent=document.getElementById("div2");
+var child=document.getElementById("p1");
+parent.removeChild(child);
+</script>
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+
+
+<script type="text/javascript">
+
+var d=new Date()
+var weekday=new Array(7)
+weekday[0]="星期日"
+weekday[1]="星期一"
+weekday[2]="星期二"
+weekday[3]="星期三"
+weekday[4]="星期四"
+weekday[5]="星期五"
+weekday[6]="星期六"
+
+document.write("今天是" + weekday[d.getDay()])
+
+</script>
+
+
+<script type="text/javascript">
+
+var d = new Date()
+document.write (d.toUTCString())
+
+</script>
+
+
+//<script type="text/javascript">
+//
+//var d = new Date()
+//d.setFullYear(1992,10,3)
+//document.write(d)
+//
+//</script>
+
+<script type="text/javascript">
+var d=new Date();
+document.write("从 1970/01/01 至今已过去 " + d.getTime() + " 毫秒");
+</script>
+
+</body>
+</html>
